@@ -1,0 +1,90 @@
+name: Support request
+description: Ask a question, report a bug, or request a feature for a NeuroPoly sequence.
+title: "[Short summary of the issue]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out! This repository is **public** — please do not post sequence source code, Siemens-proprietary material, or any participant data.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Bug report
+        - Question
+        - Feature request
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sequence
+    attributes:
+      label: Sequence
+      description: Which sequence is this about? Select all that apply.
+      multiple: true
+      options:
+        - neuropoly_gre_advshim
+        - neuropoly_ep2d_bold_advshim
+        - Other / not sequence-specific
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Scanner software version. Select all that apply.
+      multiple: true
+      options:
+        - XA60
+        - XA61B
+        - Other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: scanner
+    attributes:
+      label: Scanner
+      description: Model and field strength.
+      placeholder: "e.g. MAGNETOM Prisma 3T"
+
+  - type: input
+    id: version
+    attributes:
+      label: Sequence version
+      description: Release tag or commit, if known.
+      placeholder: "e.g. v1.2.0"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect? For questions, describe what you are trying to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / protocol parameters
+      description: Relevant protocol parameters (as text), steps, and any error messages.
+      render: text
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Images or logs
+      description: Drag and drop anonymized images or log files here (optional).
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and this has not been reported.
+          required: true
+        - label: This issue contains no proprietary code/documentation and no identifiable participant data.
+          required: true
