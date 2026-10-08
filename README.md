@@ -2,24 +2,19 @@
 
 Public space for questions, bug reports and feature requests about the MRI sequences developed by [NeuroPoly](https://neuro.polymtl.ca) for Siemens scanners.
 
-👉 **[Open an issue](https://github.com/neuropoly-siemens-idea/support/issues/new/choose)**
+👉 **[Open an issue](https://github.com/neuropoly-siemens-idea/support/issues/new?template=support.yml)**
 
 ## Sequences covered
 
 | Sequence | Description |
 |---|---|
-| [`neuropoly_gre_advshim`](https://github.com/neuropoly-siemens-idea/neuropoly_gre_advshim) | Gradient-echo (GRE) sequence with advanced shimming |
-| [`neuropoly_ep2d_bold_advshim`](https://github.com/neuropoly-siemens-idea/neuropoly_ep2d_bold_advshim) | EPI BOLD sequence with advanced shimming |
-
-## Supported platforms
-
-- **XA60**
-- **XA61B**
+| `neuropoly_gre_advshim` | Gradient-echo (GRE) sequence with advanced shimming |
+| `neuropoly_ep2d_bold_advshim` | EPI BOLD sequence with advanced shimming |
 
 ## How to ask for help
 
 1. **Search [existing issues](https://github.com/neuropoly-siemens-idea/support/issues?q=is%3Aissue)** first — your question may already be answered.
-2. **[Open a new issue](https://github.com/neuropoly-siemens-idea/support/issues/new/choose)** and fill in the form. Selecting the sequence and platform lets us label and route it automatically.
+2. **[Open a new issue](https://github.com/neuropoly-siemens-idea/support/issues/new?template=support.yml)** and fill in the form. Selecting the sequence and platform lets us label and route it automatically.
 3. Include enough detail to reproduce the problem: scanner model, field strength, software version, protocol parameters (as text), and what you expected vs. what happened.
 
 Issues are labelled by:
