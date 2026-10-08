@@ -21,7 +21,6 @@ Issues are labelled by:
 
 - **Sequence** — `seq:neuropoly_gre_advshim`, `seq:neuropoly_ep2d_bold_advshim`
 - **Platform** — `platform:XA60`, `platform:XA61B`
-- **Type** — `type:bug`, `type:question`, `type:feature`
 
 Use these labels to [filter issues](https://github.com/neuropoly-siemens-idea/support/labels) for the sequence or platform you care about.
 

@@ -14,10 +14,6 @@ label "seq:neuropoly_ep2d_bold_advshim"  "5319E7" "neuropoly_ep2d_bold_advshim s
 label "platform:XA60"   "0E8A16" "Siemens XA60"
 label "platform:XA61B"  "006B75" "Siemens XA61B"
 
-# Types
-label "type:bug"       "D73A4A" "Something isn't working"
-label "type:question"  "D876E3" "Question about usage"
-label "type:feature"   "A2EEEF" "New feature or request"
 
 # Remove GitHub's default labels that overlap with the ones above
 for l in bug question enhancement; do

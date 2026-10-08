@@ -1,4 +1,4 @@
-# Applies seq:, platform: and type: labels from the issue form answers.
+# Applies seq: and platform: labels from the issue form answers.
 name: Label issues from form
 
 on:
@@ -29,12 +29,9 @@ jobs:
               "neuropoly_ep2d_bold_advshim": "seq:neuropoly_ep2d_bold_advshim",
               "XA60": "platform:XA60",
               "XA61B": "platform:XA61B",
-              "Bug report": "type:bug",
-              "Question": "type:question",
-              "Feature request": "type:feature",
             };
 
-            const answers = [...section("Type"), ...section("Sequence"), ...section("Platform")];
+            const answers = [...section("Sequence"), ...section("Platform")];
             const wanted = answers.map(a => map[a]).filter(Boolean);
             const managed = Object.values(map);
 

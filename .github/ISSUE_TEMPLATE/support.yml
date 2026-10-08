@@ -8,17 +8,6 @@ body:
         Thanks for reaching out! This repository is **public** — please do not post sequence source code, Siemens-proprietary material, or any participant data.
 
   - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      options:
-        - Bug report
-        - Question
-        - Feature request
-    validations:
-      required: true
-
-  - type: dropdown
     id: sequence
     attributes:
       label: Sequence
